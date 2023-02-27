@@ -18,6 +18,12 @@ app.get('/', (req,res)=>{
         titulo: 'Curso Node'
     })
 });
+app.get('/index', (req,res)=>{
+    res.render('home',{
+        nombre:' Ronald Serrano',
+        titulo: 'Curso Node'
+    })
+});
 app.get('/generic', (req,res)=>{
     res.render('generic',{
         nombre:' Ronald Serrano',
